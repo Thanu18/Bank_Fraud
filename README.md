@@ -26,7 +26,7 @@ The dataset was generated using the Sparkov Data Generation tool by Brandon Harr
    - Analyzed the distribution of fraudulent vs. non-fraudulent transactions.
    - Visualized correlations between numerical features.
    - Identified and addressed missing values and duplicates.
-   ![Alt text](/Image/Distribution of Fraudulent vs non Fradulent)
+     !(/Image/Distribution of Fraudulent vs non Fradulent)
 
 ## Data Preparation
 
