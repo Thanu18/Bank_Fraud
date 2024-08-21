@@ -46,6 +46,10 @@ The dataset was generated using the Sparkov Data Generation tool by Brandon Harr
 3. **Label Encoding and Scaling**:
    - Applied one-hot encoding to categorical features.
    - Scaled numerical features using MinMaxScaler.
+      The Min-Max Scaler is used to normalize features to a fixed range, typically between 0 and 1.
+      This is done to ensure that each feature contributes equally to the model, regardless of its original scale.
+     <img src="Images/Gaussian ditribution.png" alt="Gaussian ditribution" width="300"/>
+ 
 
 ## Modeling
 
@@ -56,7 +60,8 @@ The dataset was generated using the Sparkov Data Generation tool by Brandon Harr
 2. **Evaluation Metrics**:
    - Performance was assessed using accuracy, classification report, confusion matrix, and ROC curve.
    - Models were evaluated based on their ability to correctly identify fraudulent transactions.
-
+    <img src="Images/Confusionmetrix_Linear.png" alt="Confusionmetrix_Linear" width="300"/>
+    <img src="Images/Confusionmatrix _xgb.png" alt="Confusionmatrix _xgb" width="300"/>
 3. **Feature Importance**:
    - Analyzed feature importance to understand the impact of different features on model predictions.
 
@@ -64,15 +69,16 @@ The dataset was generated using the Sparkov Data Generation tool by Brandon Harr
 
 - **Logistic Regression**: Achieved baseline performance with standard and adjusted thresholds.
 - **XGBoost**: Improved performance with hyperparameter tuning, showing better predictive capability.
+  
+  
 
 ## Model Saving and Deployment
 
-- **Saved Models**: Both the trained XGBoost model and preprocessing pipelines (e.g., one-hot encoder) were saved using `joblib` for future use.
+- **Saved Models**: Both the trained XGBoost model and preprocessing pipelines (e.g., one-hot encoder) were saved using `joblib/pickle` for future use.
 - **Feature Importance**: Extracted and saved feature importance to understand model decisions.
+  <img src="Images/Feature.png" alt="Feature" width="300"/>
 
-## Acknowledgements
 
-Special thanks to Brandon Harris for creating the Sparkov Data Generation tool, which was instrumental in generating the dataset used for this project.
 
 ## Usage
 
@@ -84,5 +90,12 @@ import joblib
 # Load the models
 xgb_model = joblib.load('xgb_model_3.pkl')
 encoder = joblib.load('OneHot_encoder_2.pkl')
+```
 
 # Use the models for prediction
+
+## Created Flask app with rendering html templates to peform prediction
+<img src="Images/Prediction.png" alt="Prediction" width="300"/>
+
+## Deploy the flask Application on the AZURE
+<img src="Images/Azure_monitoring.png" alt="Azure_monitoring" width="300"/>
