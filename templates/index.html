@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Prediction</title>
+</head>
+<body>
+    <h1>Fraud Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="trans_date_trans_time">Transaction Hour:</label>
+        <input type="number" id="trans_date_trans_time" name="trans_date_trans_time" required><br><br>
+
+        <label for="dob">Date of Birth (Year):</label>
+        <input type="number" id="dob" name="dob" required><br><br>
+
+        <label for="hour_transaction">Hour of Transaction:</label>
+        <select id="hour_transaction" name="hour_transaction" required>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Night">Night</option>
+        </select><br><br>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        <br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
