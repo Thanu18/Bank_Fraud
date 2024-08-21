@@ -28,6 +28,8 @@ The dataset was generated using the Sparkov Data Generation tool by Brandon Harr
    - Identified and addressed missing values and duplicates.
      
      <img src="Images/Distribution.png" alt="Distribution" width="300"/>
+     
+     <img src="Images/Correlations_umerical.png" alt="Correlations_umerical" width="300"/>
 
 
 ## Data Preparation
