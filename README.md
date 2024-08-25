@@ -94,8 +94,8 @@ encoder = joblib.load('OneHot_encoder_2.pkl')
 
 # Use the models for prediction
 
-## Created Flask app with rendering html templates to peform prediction
+# Created Flask app with rendering html templates to perform prediction
 <img src="Images/Prediction.png" alt="Prediction" width="300"/>
 
-## Deploy the flask Application on the AZURE
+# Deploy the flask Application on the AZURE
 <img src="Images/Azure_monitoring.png" alt="Azure_monitoring" width="300"/>
